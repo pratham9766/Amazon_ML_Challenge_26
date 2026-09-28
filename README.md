@@ -1,17 +1,23 @@
 # Amazon ML Challenge 2026 — Business Entity Resolution
 
-CPU-friendly entity resolution for matching Source 1 businesses to records in Sources 2 and 3. The repository keeps the implementation, experiment history, and compact performance evidence in Git; raw data and rebuildable model artifacts remain local.
+An end-to-end, CPU-friendly entity-resolution system for matching Source 1 businesses to records in Sources 2 and 3.
 
-## Results
+> **Final public leaderboard score: 96.1%**
+>
+> Model: **M8 Ownership** · Metric: entity-level macro F0.5 · Amazon ML Challenge 2026
 
-| System | Evaluation | Macro F0.5 | Precision | Recall | Notes |
-|---|---:|---:|---:|---:|---|
-| M8 ownership | dense-region grouped CV | **0.9733** | — | — | Best offline experiment; stage on M3F with one-to-one resolution |
-| M5 competition | dense-region grouped CV | 0.9707 | 0.9856 | 0.9367 | Public leaderboard **0.959** |
-| M2 | 20k grouped OOF | 0.9622 | 0.9802 | 0.9221 | Confirmation F0.5 0.9607 |
-| Gemini baseline | 10k grouped OOF | 0.9204 | 0.9565 | 0.8539 | Earlier reference implementation |
+This repository contains the implementation, experiment history, and compact performance evidence. Raw competition data and rebuildable model artifacts remain local and are excluded from Git.
 
-The frozen blocker reaches **97.14% pair recall** and **90.89% complete-entity recall** on the untouched 7.5k confirmation set with 52.6 candidates per Source 1 entity on average. Leaderboard values are user-reported and are kept distinct from offline validation metrics.
+## Performance
+
+| System | Evaluation | Macro F0.5 | Precision | Recall | Public leaderboard |
+|---|---|---:|---:|---:|---:|
+| **M8 Ownership (final)** | dense-region grouped CV | **0.9733** | — | — | **0.961 (96.1%)** |
+| M5 Competition | dense-region grouped CV | 0.9707 | 0.9856 | 0.9367 | 0.959 |
+| M2 | 20k grouped OOF | 0.9622 | 0.9802 | 0.9221 | 0.957 with one-to-one resolution |
+| Gemini baseline | 10k grouped OOF | 0.9204 | 0.9565 | 0.8539 | — |
+
+The final M8 system improved the public leaderboard score from 95.7% for M2 and 95.9% for M5 to **96.1%**. The frozen blocker reaches **97.14% pair recall** and **90.89% complete-entity recall** on the untouched 7.5k confirmation set with 52.6 candidates per Source 1 entity on average. Public leaderboard results are kept distinct from offline validation metrics.
 
 For a compact comparison, see the [model card](MODEL_CARD.md). Full methodology and caveats are in the [main final report](codex_results/reports/final_report.md), [leaderboard analysis](codex_results/reports/leaderboard_analysis.md), and [experiment log](codex_results/experiments/experiment_log.csv).
 
@@ -25,6 +31,26 @@ gemini_solution/   Earlier baseline implementation and its reports
 ```
 
 Large local-only directories—datasets, Parquet caches, trained LightGBM files, OOF predictions, candidate pairs, submissions, and logs—are intentionally excluded by `.gitignore`. They are reproducible from the tracked code or are competition-provided inputs.
+
+## Approach
+
+```text
+Raw TSV records
+      ↓
+Unicode normalization and training-learned transliteration
+      ↓
+Country/source-aware TF-IDF blocking + missing-address rescue
+      ↓
+RapidFuzz pair features and retrieval context
+      ↓
+LightGBM matcher with grouped out-of-fold validation
+      ↓
+Ownership/competition features and one-to-one target resolution
+      ↓
+Officially validated submission
+```
+
+The system is designed for approximately 8 GB RAM and four CPU cores. Candidate generation is chunked and resumable, and pair features are computed only inside the bounded candidate pool.
 
 ## Main pipeline
 

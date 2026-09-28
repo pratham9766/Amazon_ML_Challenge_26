@@ -8,6 +8,7 @@ All numbers are measured. Nothing here is estimated unless labelled as an estima
 |---|---|---|---|
 | S002 | M2 + one-to-one | OOF 0.9622 (sparse dev), confirmation 0.9607 | **0.950** |
 | **S005** | **M5: competition stage 2 on M2 + one-to-one** | dense 0.9707 vs 0.9665 for S002's method | **0.959** |
+| **S008** | **M8: ownership stage on M3F + one-to-one** | dense 0.9732 across both regions | **0.961** |
 
 The offline gain from S002 to S005 was +0.0042 on the dense region; the LB gain was **+0.009**. The competition signal helps France (unlabelled, with 8–14× more conflicts than US/India) more than the labelled regions show.
 
@@ -78,6 +79,6 @@ M8 details (grouped 5-fold OOF):
 * **Expected-F0.5 list selection:** +0.0001 to +0.0002 over the threshold rule, but singleton accuracy fell from 0.979 to 0.963. **Rejected for singleton safety and robustness in the unseen country.**
 * **Singleton logic:** re-optimized from scratch. The best rule on M8 needs no separate top-candidate gate (t_top = none), and singleton accuracy is 0.979.
 
-**Expected leaderboard for S008** (an estimate from the single observed offline→LB pair, S002→S005: +0.0042 offline gave +0.009 LB): offline gain over S005's method ≈ +0.0022 (0.97298 vs 0.97078) → **LB ≈ 0.962–0.964**. The amplification may differ, because this gain is partly recall rather than conflict resolution.
+**Public leaderboard result for S008:** **0.961 (96.1%)**. Before submission, the score was estimated at 0.962–0.964 from the offline gain over S005; the observed result was slightly below that narrow estimate while still improving on S005's 0.959.
 
 **Conclusion on 0.99:** the full structural stack reached 0.9730 offline, against a hard ceiling of 0.9916 with this blocker. By the brief's own criterion (cannot exceed ~0.98 offline), **0.99 is not supported by evidence for this pipeline**. The next levers would be a higher-recall blocker (26% of the remaining loss) and recall on address-less targets (48% of model-rejected positives).

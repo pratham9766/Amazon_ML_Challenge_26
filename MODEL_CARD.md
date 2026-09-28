@@ -43,8 +43,8 @@ M2 uses a pair threshold of 0.69 and predicts no matches unless the query’s be
 | Submission | Offline evidence | Public leaderboard |
 |---|---|---:|
 | S002 M2 + one-to-one | M2 OOF F0.5 0.9622 | 0.957 |
-| S005 M5 competition | dense-region F0.5 0.9707 | **0.959** |
-| S008 M8 ownership | dense-region F0.5 about 0.9732 | not recorded |
+| S005 M5 competition | dense-region F0.5 0.9707 | 0.959 |
+| S008 M8 ownership | dense-region F0.5 about 0.9732 | **0.961** |
 
 Leaderboard scores are user-reported. The one-to-one rule has strong structural motivation because training targets map to at most one Source 1 entity, but sparse benchmark conflicts make its standalone offline effect difficult to estimate.
 

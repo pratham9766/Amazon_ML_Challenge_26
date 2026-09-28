@@ -44,6 +44,6 @@ python make_submission.py --model M2 --sub_id S001              # predicts, appl
 | `models/` | fold models and `*_full.txt` final models |
 | `oof/` | out-of-fold predictions |
 | `experiments/experiment_log.csv` | every blocker and matcher experiment (append-only) |
-| `experiments/leaderboard_log.csv` | leaderboard submissions (public LB column to be filled by the team) |
+| `experiments/leaderboard_log.csv` | offline and reported public-leaderboard results for submitted models |
 | `reports/` | rank failure, rescue channels, blocking v2, matcher, error analysis, leaderboard, final |
 | `output/`, `submissions/submission_<id>/` | validated TSVs and a manifest |
