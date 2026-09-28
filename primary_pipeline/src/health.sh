@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Health monitor: emits one line per milestone / error / stall / crash / low-memory event.
-L="D:/RESOURCES/AmazonMLChallenge/codex_results/logs"
+L="D:/RESOURCES/AmazonMLChallenge/primary_pipeline/logs"
 declare -A OFF
 MIL='fold [0-9]|DENSE\[B\]|fair subset|round 2:|REFINE DONE|DENSE2 DONE|M8 results|M8 chosen|M8 region1|M8 DONE|SHIP M8 DONE|decision set|restored S005|submission .* ready|stats \{|exit [0-9]+|RUN |VALIDATION FAILED|merged|reference model|scored|done$'
 ERR='Traceback|MemoryError|memory allocation|VALIDATION FAILED|INFO exit [1-9]|Error'

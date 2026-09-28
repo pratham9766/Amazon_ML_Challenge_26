@@ -1,6 +1,6 @@
 """Shared paths, normalization expressions, logging and experiment tracking.
 
-All outputs of this package stay inside codex_results/.
+All outputs of this package stay inside primary_pipeline/.
 """
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ from pathlib import Path
 import polars as pl
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "codex_results"
+OUT = ROOT / "primary_pipeline"
 DATA = ROOT / "dataset-20260925T050739Z-1-001" / "dataset"
 VALIDATOR = ROOT / "resources-20260925T050740Z-1-001" / "resources" / "utils" / "validate_submission.py"
 CACHE = OUT / "cache"

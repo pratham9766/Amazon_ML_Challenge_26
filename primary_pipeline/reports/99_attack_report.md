@@ -63,7 +63,7 @@ Pair counts: FP 1,476 · FN (blocker) 5,642 · FN (model) 8,700.
 
 ## 7. Final submission
 
-**S008 = M8 + isotonic calibration + threshold 0.68 + global one-to-one** → `codex_results/output/` (copy in `submissions/submission_S008_M8_ownership/`).
+**S008 = M8 + isotonic calibration + threshold 0.68 + global one-to-one** → `primary_pipeline/output/` (copy in `submissions/submission_S008_M8_ownership/`).
 The official validator passed on matching_results.tsv, and the streaming candidate check passed with 0 errors.
 Test output: 1,629,667 matched S1s and 5,710,090 predicted pairs. The candidates are unchanged (frozen blocker, 92.7M pairs).
 

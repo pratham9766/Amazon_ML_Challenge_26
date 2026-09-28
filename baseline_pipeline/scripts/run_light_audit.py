@@ -1,7 +1,7 @@
 """
 Lightweight, memory-efficient inference audit script.
 Computes candidate counts, probability distributions, and feature shifts
-on a representative diagnostic sample to generate gemini_solution/reports/inference_audit.md.
+on a representative diagnostic sample to generate baseline_pipeline/reports/inference_audit.md.
 """
 import sys
 from pathlib import Path
@@ -24,7 +24,7 @@ import lightgbm as lgb
 from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from gemini_solution.scripts.train_model import (
+from baseline_pipeline.scripts.train_model import (
     clean_text, strip_suffix, sorted_tokens, first_two_tokens,
     query_sparse_topk, compute_pair_features
 )
@@ -32,10 +32,10 @@ from gemini_solution.scripts.train_model import (
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger('light_audit')
 
-CACHE = BASE / 'gemini_solution' / 'cache'
-MODELS = BASE / 'gemini_solution' / 'models'
-REPORTS = BASE / 'gemini_solution' / 'reports'
-OUTPUT = BASE / 'gemini_solution' / 'output'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
+MODELS = BASE / 'baseline_pipeline' / 'models'
+REPORTS = BASE / 'baseline_pipeline' / 'reports'
+OUTPUT = BASE / 'baseline_pipeline' / 'output'
 
 
 def main():
@@ -254,7 +254,7 @@ def main():
             })
 
     # 6. Generate Markdown Report
-    log.info("Writing gemini_solution/reports/inference_audit.md...")
+    log.info("Writing baseline_pipeline/reports/inference_audit.md...")
     p_min = float(np.min(test_probs))
     p_max = float(np.max(test_probs))
     p_mean = float(np.mean(test_probs))

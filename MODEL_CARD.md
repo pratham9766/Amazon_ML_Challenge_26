@@ -24,7 +24,7 @@ Match each Source 1 business to zero or more records in Sources 2 and 3. Evaluat
 | M6 | Competition stage on M3F | dense-region grouped CV | 0.9717 | 0.9862 | 0.9383 | 0.9785 |
 | M8 | Ownership stage on M3F | dense-region grouped CV | **0.9733** | — | — | — |
 
-Metrics come from `codex_results/experiments/experiment_log.csv` and the frozen matcher result JSON files. Dense-region scores are not directly comparable with the 20k OOF scores because their evaluation populations differ.
+Metrics come from `primary_pipeline/experiments/experiment_log.csv` and the frozen matcher result JSON files. Dense-region scores are not directly comparable with the 20k OOF scores because their evaluation populations differ.
 
 ## Candidate generation
 

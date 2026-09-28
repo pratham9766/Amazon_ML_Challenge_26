@@ -21,14 +21,14 @@ from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 from tqdm import tqdm
 
-from gemini_solution.src.normalization.normalizer import normalize_dataframe
+from baseline_pipeline.src.normalization.normalizer import normalize_dataframe
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger('blocking_bench')
 
 BASE = Path('d:/RESOURCES/AmazonMLChallenge')
-CACHE = BASE / 'gemini_solution' / 'cache'
-REPORTS = BASE / 'gemini_solution' / 'reports'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
+REPORTS = BASE / 'baseline_pipeline' / 'reports'
 REPORTS.mkdir(parents=True, exist_ok=True)
 
 

@@ -1,8 +1,8 @@
-# Business Entity Resolution: reproducible pipeline (codex_results)
+# Business Entity Resolution: primary pipeline
 
-Only competition-provided data is used. There are no external lookups, geocoding or registries, and nothing is downloaded. All outputs stay inside `codex_results/`.
+Only competition-provided data is used. There are no external lookups, geocoding or registries, and nothing is downloaded. All outputs stay inside `primary_pipeline/`.
 
-Environment: Python 3.11 and `requirements.txt`. It runs on about 8 GB RAM with 4 CPU cores (hashed sparse TF-IDF, chunked Parquet, bounded candidate pools). Run the commands from `codex_results/src/` with `PYTHONIOENCODING=utf-8`.
+Environment: Python 3.11 and `requirements.txt`. It runs on about 8 GB RAM with 4 CPU cores (hashed sparse TF-IDF, chunked Parquet, bounded candidate pools). Run the commands from `primary_pipeline/src/` with `PYTHONIOENCODING=utf-8`.
 
 ## End-to-end
 

@@ -1,4 +1,4 @@
-# Final report: Business Entity Resolution (codex_results)
+# Final report: Business Entity Resolution (primary pipeline)
 
 ## Summary
 

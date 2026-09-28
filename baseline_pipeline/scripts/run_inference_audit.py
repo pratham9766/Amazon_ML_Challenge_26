@@ -2,7 +2,7 @@
 Rigorous Inference Audit Script.
 Compares train/OOF vs test candidate generation, feature distributions,
 probability calibrations, and verifies pipeline integrity.
-Produces gemini_solution/reports/inference_audit.md.
+Produces baseline_pipeline/reports/inference_audit.md.
 """
 import sys
 from pathlib import Path
@@ -25,7 +25,7 @@ import lightgbm as lgb
 from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from gemini_solution.scripts.train_model import (
+from baseline_pipeline.scripts.train_model import (
     clean_text, strip_suffix, sorted_tokens, first_two_tokens,
     query_sparse_topk, compute_pair_features
 )
@@ -33,9 +33,9 @@ from gemini_solution.scripts.train_model import (
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger('inference_audit')
 
-CACHE = BASE / 'gemini_solution' / 'cache'
-MODELS = BASE / 'gemini_solution' / 'models'
-REPORTS = BASE / 'gemini_solution' / 'reports'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
+MODELS = BASE / 'baseline_pipeline' / 'models'
+REPORTS = BASE / 'baseline_pipeline' / 'reports'
 REPORTS.mkdir(parents=True, exist_ok=True)
 
 
@@ -62,7 +62,7 @@ def main():
     log.info(f"Model internal feature names match config feature_cols: {feat_order_match}")
 
     # 2. Inspect the generated test files
-    out_dir = BASE / 'gemini_solution' / 'output'
+    out_dir = BASE / 'baseline_pipeline' / 'output'
     matching_file = out_dir / 'matching_results.tsv'
     candidate_file = out_dir / 'candidate_pairs.tsv'
 
@@ -350,7 +350,7 @@ def main():
             })
 
     # 6. Generate the Final Audit Markdown Report
-    log.info("Generating gemini_solution/reports/inference_audit.md...")
+    log.info("Generating baseline_pipeline/reports/inference_audit.md...")
     p_min = float(np.min(all_test_probs))
     p_max = float(np.max(all_test_probs))
     p_mean = float(np.mean(all_test_probs))

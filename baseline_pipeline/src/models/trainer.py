@@ -21,7 +21,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-GEMINI_DIR = Path('d:/RESOURCES/AmazonMLChallenge/gemini_solution')
+GEMINI_DIR = Path('d:/RESOURCES/AmazonMLChallenge/baseline_pipeline')
 
 
 class EntityResolutionTrainer:

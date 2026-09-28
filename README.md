@@ -19,15 +19,15 @@ This repository contains the implementation, experiment history, and compact per
 
 The final M8 system improved the public leaderboard score from 95.7% for M2 and 95.9% for M5 to **96.1%**. The frozen blocker reaches **97.14% pair recall** and **90.89% complete-entity recall** on the untouched 7.5k confirmation set with 52.6 candidates per Source 1 entity on average. Public leaderboard results are kept distinct from offline validation metrics.
 
-For a compact comparison, see the [model card](MODEL_CARD.md). Full methodology and caveats are in the [main final report](codex_results/reports/final_report.md), [leaderboard analysis](codex_results/reports/leaderboard_analysis.md), and [experiment log](codex_results/experiments/experiment_log.csv).
+For a compact comparison, see the [model card](MODEL_CARD.md). Full methodology and caveats are in the [main final report](primary_pipeline/reports/final_report.md), [leaderboard analysis](primary_pipeline/reports/leaderboard_analysis.md), and [experiment log](primary_pipeline/experiments/experiment_log.csv).
 
 ## Repository map
 
 ```text
 analysis/          Reproducible dataset audit, metrics, and figures
 blocking/          Initial blocking benchmark and ablation evidence
-codex_results/     Main pipeline, reports, frozen decisions, and metrics
-gemini_solution/   Earlier baseline implementation and its reports
+primary_pipeline/  Main pipeline, reports, frozen decisions, and metrics
+baseline_pipeline/ Earlier baseline implementation and its reports
 ```
 
 Large local-only directories—datasets, Parquet caches, trained LightGBM files, OOF predictions, candidate pairs, submissions, and logs—are intentionally excluded by `.gitignore`. They are reproducible from the tracked code or are competition-provided inputs.
@@ -59,7 +59,7 @@ Python 3.11 is recommended. From the repository root:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install -r codex_results\requirements.txt
+python -m pip install -r primary_pipeline\requirements.txt
 ```
 
 Place the official data at:
@@ -77,7 +77,7 @@ dataset-20260925T050739Z-1-001/dataset/
 
 The supplied validator is expected at `resources-20260925T050740Z-1-001/resources/utils/validate_submission.py`.
 
-Run the production workflow from `codex_results/src/`:
+Run the production workflow from `primary_pipeline/src/`:
 
 ```powershell
 python prep.py
@@ -89,7 +89,7 @@ python pairs.py --split train --tag diag --qchunk 10000
 python train_matcher.py --name M2 --lr 0.1
 ```
 
-Test retrieval and submission generation are documented in [codex_results/README.md](codex_results/README.md). The pipeline uses only competition-provided data; its transliteration dictionary is learned from training pairs.
+Test retrieval and submission generation are documented in [primary_pipeline/README.md](primary_pipeline/README.md). The pipeline uses only competition-provided data; its transliteration dictionary is learned from training pairs.
 
 ## What belongs in Git
 

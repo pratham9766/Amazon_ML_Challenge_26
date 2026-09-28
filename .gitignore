@@ -30,23 +30,23 @@ Thumbs.db
 /blocking/benchmark.log
 
 # Main pipeline: all rebuildable or submission-time artifacts
-/codex_results/cache/
-/codex_results/features/
-/codex_results/logs/
-/codex_results/models/
-/codex_results/oof/
-/codex_results/output/
-/codex_results/predictions/
-/codex_results/submissions/
-/codex_results/blocker/*/
-/codex_results/blocker/**/*.parquet
+/primary_pipeline/cache/
+/primary_pipeline/features/
+/primary_pipeline/logs/
+/primary_pipeline/models/
+/primary_pipeline/oof/
+/primary_pipeline/output/
+/primary_pipeline/predictions/
+/primary_pipeline/submissions/
+/primary_pipeline/blocker/*/
+/primary_pipeline/blocker/**/*.parquet
 
 # Baseline pipeline: rebuildable or submission-time artifacts
-/gemini_solution/cache/
-/gemini_solution/models/
-/gemini_solution/output/
-/gemini_solution/artifacts/
-/gemini_solution/v2/
+/baseline_pipeline/cache/
+/baseline_pipeline/models/
+/baseline_pipeline/output/
+/baseline_pipeline/artifacts/
+/baseline_pipeline/v2/
 
 # Generic experiment residue
 *.log

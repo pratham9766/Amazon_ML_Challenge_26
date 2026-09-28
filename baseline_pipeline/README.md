@@ -61,7 +61,7 @@ matching_results.tsv + candidate_pairs.tsv
 ## Directory Structure
 
 ```
-gemini_solution/
+baseline_pipeline/
 ├── scripts/
 │   └── run_all.py          # Main entry point
 ├── src/                     # Modular source code

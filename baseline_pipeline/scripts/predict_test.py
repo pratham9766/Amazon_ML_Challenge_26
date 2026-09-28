@@ -27,7 +27,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import lightgbm as lgb
 import unicodedata
 
-from gemini_solution.scripts.train_model import (
+from baseline_pipeline.scripts.train_model import (
     clean_text, strip_suffix, sorted_tokens, first_two_tokens,
     query_sparse_topk, compute_pair_features
 )
@@ -35,9 +35,9 @@ from gemini_solution.scripts.train_model import (
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger('predict_test')
 
-CACHE = BASE / 'gemini_solution' / 'cache'
-MODELS = BASE / 'gemini_solution' / 'models'
-OUTPUT = BASE / 'gemini_solution' / 'output'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
+MODELS = BASE / 'baseline_pipeline' / 'models'
+OUTPUT = BASE / 'baseline_pipeline' / 'output'
 OUTPUT.mkdir(parents=True, exist_ok=True)
 RES = BASE / 'resources-20260925T050740Z-1-001' / 'resources'
 DATA = BASE / 'dataset-20260925T050739Z-1-001' / 'dataset'

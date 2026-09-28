@@ -1,6 +1,6 @@
 """
 Self-contained script to compute test probability percentiles and train vs test feature shifts,
-then write gemini_solution/reports/inference_audit.md.
+then write baseline_pipeline/reports/inference_audit.md.
 Operates on small memory footprint (< 300 MB).
 """
 import sys
@@ -18,7 +18,7 @@ import pandas as pd
 import lightgbm as lgb
 from rapidfuzz import fuzz, distance
 
-from gemini_solution.scripts.train_model import (
+from baseline_pipeline.scripts.train_model import (
     clean_text, strip_suffix, sorted_tokens, first_two_tokens,
     compute_pair_features
 )
@@ -26,10 +26,10 @@ from gemini_solution.scripts.train_model import (
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger('audit_dist')
 
-CACHE = BASE / 'gemini_solution' / 'cache'
-MODELS = BASE / 'gemini_solution' / 'models'
-REPORTS = BASE / 'gemini_solution' / 'reports'
-OUTPUT = BASE / 'gemini_solution' / 'output'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
+MODELS = BASE / 'baseline_pipeline' / 'models'
+REPORTS = BASE / 'baseline_pipeline' / 'reports'
+OUTPUT = BASE / 'baseline_pipeline' / 'output'
 
 def main():
     log.info("Starting audit distribution computation...")
@@ -298,7 +298,7 @@ def main():
         "With the inference integrity fully verified and confirmed, the primary performance bottleneck is confirmed:",
         "**Candidate Generation (Blocking) Pair Recall Ceiling** stands at **94.60%** (Complete Entity Recall at 85.24%).",
         "",
-        "We advance to **Phase 2: Blocking Recall Improvement** in `gemini_solution/v2/` with the target:",
+        "We advance to **Phase 2: Blocking Recall Improvement** in `baseline_pipeline/v2/` with the target:",
         "- **Pair Recall $\\ge 98.5\\%$**",
         "- **Complete Entity Recall $\\ge 95\\%$**",
         "- **Candidates/query $< 250$**",

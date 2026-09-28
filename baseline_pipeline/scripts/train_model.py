@@ -31,10 +31,10 @@ import unicodedata
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger('train_matcher')
 
-CACHE = BASE / 'gemini_solution' / 'cache'
-MODELS = BASE / 'gemini_solution' / 'models'
-REPORTS = BASE / 'gemini_solution' / 'reports'
-EXPDIR = BASE / 'gemini_solution' / 'experiments'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
+MODELS = BASE / 'baseline_pipeline' / 'models'
+REPORTS = BASE / 'baseline_pipeline' / 'reports'
+EXPDIR = BASE / 'baseline_pipeline' / 'experiments'
 for d in [CACHE, MODELS, REPORTS, EXPDIR]:
     d.mkdir(parents=True, exist_ok=True)
 

@@ -99,7 +99,7 @@
 With the inference integrity fully verified and confirmed, the primary performance bottleneck is confirmed:
 **Candidate Generation (Blocking) Pair Recall Ceiling** stands at **94.60%** (Complete Entity Recall at 85.24%).
 
-We advance to **Phase 2: Blocking Recall Improvement** in `gemini_solution/v2/` with the target:
+We advance to **Phase 2: Blocking Recall Improvement** in `baseline_pipeline/v2/` with the target:
 - **Pair Recall $\ge 98.5\%$**
 - **Complete Entity Recall $\ge 95\%$**
 - **Candidates/query $< 250$**

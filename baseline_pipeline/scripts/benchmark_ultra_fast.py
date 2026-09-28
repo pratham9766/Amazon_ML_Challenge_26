@@ -91,7 +91,7 @@ def query_sparse_topk_fast(query_mat, cand_mat, cand_ids, top_k=25, batch_size=5
 def main():
     t_start = time.time()
     log_mem("Start")
-    CACHE = BASE / 'gemini_solution' / 'cache'
+    CACHE = BASE / 'baseline_pipeline' / 'cache'
     
     # 1. Select 5,000 S1 queries from India
     print("\n--- 1. Loading S1 Queries ---")

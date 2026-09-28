@@ -4,7 +4,7 @@ Step 0: Convert all TSV files to Parquet with country partitioning.
 Run this ONCE before the main pipeline.
 
 Usage:
-    python gemini_solution/scripts/00_prepare_parquet.py
+    python baseline_pipeline/scripts/00_prepare_parquet.py
 """
 import sys, time, gc
 from pathlib import Path
@@ -12,7 +12,7 @@ import pandas as pd
 
 BASE = Path('d:/RESOURCES/AmazonMLChallenge')
 DATA = BASE / 'dataset-20260925T050739Z-1-001' / 'dataset'
-CACHE = BASE / 'gemini_solution' / 'cache'
+CACHE = BASE / 'baseline_pipeline' / 'cache'
 CACHE.mkdir(parents=True, exist_ok=True)
 
 def convert_tsv_to_parquet(tsv_path: Path, name: str, chunksize: int = 500000):

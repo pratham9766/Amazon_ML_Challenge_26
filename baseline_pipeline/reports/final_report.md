@@ -133,8 +133,8 @@ Setting the decision threshold at **`0.61`** maximized Macro F0.5 by maintaining
 The final submission was verified directly with the official competition validator:
 ```
 python utils/validate_submission.py \
-    --matching gemini_solution/output/matching_results.tsv \
-    --candidate gemini_solution/output/candidate_pairs.tsv \
+    --matching baseline_pipeline/output/matching_results.tsv \
+    --candidate baseline_pipeline/output/candidate_pairs.tsv \
     --test-dir dataset/test
 ```
 
@@ -155,11 +155,11 @@ PASS — no blocking issues found. Safe to submit.
 
 | Artifact | File Location | Description |
 |---|---|---|
-| **Scored Matches** | `gemini_solution/output/matching_results.tsv` | Final predictions for leaderboard evaluation |
-| **Candidate Pairs** | `gemini_solution/output/candidate_pairs.tsv` | Full candidate pool passed to classifier |
-| **Trained Models** | `gemini_solution/models/` | 5 LightGBM fold models + `matcher_config.pkl` |
-| **Blocking Report** | `gemini_solution/reports/blocking_report.md` | Channel breakdown and recall benchmarks |
-| **Model Report** | `gemini_solution/reports/model_report.md` | CV validation metrics and feature importances |
-| **Error Analysis** | `gemini_solution/reports/error_analysis.md` | In-depth false positive and singleton analysis |
-| **Experiments Log** | `gemini_solution/experiments/experiments.csv` | Full tracking log of pipeline iterations |
-| **Codebase** | `gemini_solution/src/` & `gemini_solution/scripts/` | Modular, reproducible Python implementation |
+| **Scored Matches** | `baseline_pipeline/output/matching_results.tsv` | Final predictions for leaderboard evaluation |
+| **Candidate Pairs** | `baseline_pipeline/output/candidate_pairs.tsv` | Full candidate pool passed to classifier |
+| **Trained Models** | `baseline_pipeline/models/` | 5 LightGBM fold models + `matcher_config.pkl` |
+| **Blocking Report** | `baseline_pipeline/reports/blocking_report.md` | Channel breakdown and recall benchmarks |
+| **Model Report** | `baseline_pipeline/reports/model_report.md` | CV validation metrics and feature importances |
+| **Error Analysis** | `baseline_pipeline/reports/error_analysis.md` | In-depth false positive and singleton analysis |
+| **Experiments Log** | `baseline_pipeline/experiments/experiments.csv` | Full tracking log of pipeline iterations |
+| **Codebase** | `baseline_pipeline/src/` & `baseline_pipeline/scripts/` | Modular, reproducible Python implementation |

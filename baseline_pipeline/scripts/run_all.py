@@ -6,7 +6,7 @@ Gemini Solution — Main Pipeline (Parquet-based, per-country)
 Prerequisite: Run 00_prepare_parquet.py first.
 
 Usage:
-    python gemini_solution/scripts/run_all.py [--sample N] [--skip-test]
+    python baseline_pipeline/scripts/run_all.py [--sample N] [--skip-test]
 """
 import sys, os, gc, time, argparse, warnings, re, pickle, logging, subprocess
 from pathlib import Path
@@ -31,7 +31,7 @@ log = logging.getLogger('gemini')
 BASE   = Path('d:/RESOURCES/AmazonMLChallenge')
 DATA   = BASE / 'dataset-20260925T050739Z-1-001' / 'dataset'
 RES    = BASE / 'resources-20260925T050740Z-1-001' / 'resources'
-SOL    = BASE / 'gemini_solution'
+SOL    = BASE / 'baseline_pipeline'
 CACHE  = SOL / 'cache'
 MODELS = SOL / 'models'
 OUTPUT = SOL / 'output'

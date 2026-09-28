@@ -7,7 +7,7 @@ import hashlib
 
 BASE_DIR = Path('d:/RESOURCES/AmazonMLChallenge')
 DATASET_DIR = BASE_DIR / 'dataset-20260925T050739Z-1-001' / 'dataset'
-GEMINI_DIR = BASE_DIR / 'gemini_solution'
+GEMINI_DIR = BASE_DIR / 'baseline_pipeline'
 CACHE_DIR = GEMINI_DIR / 'cache'
 
 def ensure_dirs():
