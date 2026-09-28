@@ -1,0 +1,16 @@
+{
+  "seed": 20260925,
+  "development_queries": 20000,
+  "confirmation_queries": 7500,
+  "candidate_pool_queries": 65000,
+  "country_gating": true,
+  "channel_top_k": 75,
+  "final_candidate_caps": [50, 75, 100, 125, 150, 200],
+  "sample_df_limits": [10, 25, 50, 100],
+  "selected_features_per_query": 6,
+  "max_queries_per_feature": 15,
+  "channels": [
+    "name_char", "address_char", "suffix_char",
+    "name_word", "address_word", "exact_name", "numeric"
+  ]
+}

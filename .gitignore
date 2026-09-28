@@ -1,0 +1,58 @@
+# Raw competition data (not redistributable and too large for Git)
+/dataset-*/
+/resources-*/
+
+# Python environments and caches
+/.venv/
+/venv/
+/**/.venv/
+/**/venv/
+/**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Dataset audit: generated database and runtime log
+/analysis/cache/
+/analysis/run.log
+
+# Original blocking benchmark: bulky candidate artifacts and logs
+/blocking/artifacts/*.gz
+/blocking/artifacts/*.tsv
+/blocking/benchmark.log
+
+# Main pipeline: all rebuildable or submission-time artifacts
+/codex_results/cache/
+/codex_results/features/
+/codex_results/logs/
+/codex_results/models/
+/codex_results/oof/
+/codex_results/output/
+/codex_results/predictions/
+/codex_results/submissions/
+/codex_results/blocker/*/
+/codex_results/blocker/**/*.parquet
+
+# Baseline pipeline: rebuildable or submission-time artifacts
+/gemini_solution/cache/
+/gemini_solution/models/
+/gemini_solution/output/
+/gemini_solution/artifacts/
+/gemini_solution/v2/
+
+# Generic experiment residue
+*.log
+*.out
+*.err
+*.bak
+*.sqlite
+*.sqlite3
+*.parquet

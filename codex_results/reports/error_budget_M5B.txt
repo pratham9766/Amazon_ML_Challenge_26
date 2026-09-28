@@ -1,0 +1,11 @@
+M5B subset-B queries=60651 F0.5=0.97078 P=0.9863 R=0.9349 single=0.9797  total loss=1772.4
+singleton predicted non-empty       queries=   70 loss=   70.0 share=  3.9%
+true-match S1 predicted EMPTY        queries=  385 loss=  385.0 share= 21.7%
+has FP (non-singleton)               queries= 1376 loss=  336.3 share= 19.0%
+FN only, blocker-missed involved     queries= 4633 loss=  458.2 share= 25.9%
+FN only, model-rejected only         queries= 6559 loss=  522.9 share= 29.5%
+pairs: FP=1476 FN_blocker=5642 FN_model=8700
+FP targets owned by another S1: 25.0%   (owner in region: 4.5%)
+FP: house-number conflict=28.9%  target addr missing=17.6%  repeated S1 name=29.4%  non-Latin name=0.1%  exact core name=26.7%
+FN_model: house-number conflict=31.2%  target addr missing=47.8%  repeated S1 name=48.0%  non-Latin name=0.0%  exact core name=35.2%
+oracle ceiling (perfect matcher on these candidates): 0.9916

@@ -1,0 +1,42 @@
+paths:
+  dataset_dir: "../dataset-20260925T050739Z-1-001/dataset"
+  cache_dir: "cache"
+  artifacts_dir: "artifacts"
+  models_dir: "models"
+  output_dir: "output"
+
+dataset:
+  train: "train"
+  test: "test"
+
+normalization:
+  lowercase: true
+  remove_punctuation: true
+
+blocking:
+  tfidf:
+    analyzer: "char_wb"
+    ngram_range: [2, 4]
+    max_features: 50000
+  k_channels:
+    name: 50
+    brand: 20
+  fanout_cap: 100
+
+features:
+  string_similarities: ["levenshtein", "jaro_winkler"]
+  numeric_differences: ["absolute", "relative"]
+
+model:
+  lightgbm:
+    objective: "binary"
+    metric: "binary_logloss"
+    learning_rate: 0.1
+    num_leaves: 31
+
+threshold:
+  sweep_range: [0.1, 0.9]
+  sweep_step: 0.05
+
+inference:
+  batch_size: 10000

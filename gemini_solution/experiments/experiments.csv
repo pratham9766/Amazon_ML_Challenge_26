@@ -1,0 +1,2 @@
+experiment_id,date,blocker_version,feature_version,model,negative_strategy,threshold,singleton_strategy,pair_recall,complete_entity_recall,macro_f0_5,macro_precision,macro_recall,singleton_accuracy,candidate_mean,runtime,notes
+exp_lgb_v1,2026-09-25 20:31,v1_word_tfidf_exact,37_features,LightGBM_5Fold_GBDT,10x_hard_retrieval,0.6100000000000002,optimal_f05_threshold,0.9404772209238582,0.5717163150641366,0.9203635003837115,0.9565019965369802,0.8538916753058596,0.8994708994708994,35.8556,36.9min,5-fold grouped CV on 10000 S1 training queries

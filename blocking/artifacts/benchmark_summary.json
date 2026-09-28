@@ -1,0 +1,1671 @@
+{
+  "seed": 20260925,
+  "target_rows": 10320219,
+  "country_candidate_reduction": 0.4793358281495771,
+  "individual_channels": {
+    "name_char": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.31542703701564934,
+      "complete_entity_recall": 0.18028094354624966,
+      "at_least_one_recall": 0.4302676914921813,
+      "candidates": {
+        "mean": 50.1381,
+        "median": 75.0,
+        "p90": 75.0,
+        "p95": 75.0,
+        "p99": 75.0,
+        "max": 75
+      },
+      "singleton_mean": 50.46607929515419,
+      "singleton_p95": 75.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.3324805126488451,
+          "complete_entity_recall": 0.1881909106860853,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.3140961442163245,
+          "complete_entity_recall": 0.16340599962735233,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.31248809599390515,
+          "complete_entity_recall": 0.13282379673621153,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.24068352963892645,
+          "complete_entity_recall": 0.12748579545454544,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.28545400238948626,
+          "complete_entity_recall": 0.23745184844477663,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.3434670839387504,
+          "complete_entity_recall": 0.27860923006885563,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.28944108431101073,
+          "complete_entity_recall": 0.1682067764831927,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.2070054752211147,
+          "complete_entity_recall": 0.031904287138584245,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.317873382301504,
+          "complete_entity_recall": 0.19580272822665268,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.22673729148549293,
+          "complete_entity_recall": 0.10310102301790282,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.3288915808600848,
+          "complete_entity_recall": 0.24682010902483342,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.006987577639751553,
+          "complete_entity_recall": 0.0010630758327427356,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.35731497418244407,
+          "complete_entity_recall": 0.3077445652173913,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.35985533453887886,
+          "complete_entity_recall": 0.18769771528998241,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.3288530465949821,
+          "complete_entity_recall": 0.3288530465949821,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.3005286701911346,
+          "complete_entity_recall": 0.2453560371517028,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "address_char": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7069209447363862,
+      "complete_entity_recall": 0.4698648290485025,
+      "at_least_one_recall": 0.8737874370527432,
+      "candidates": {
+        "mean": 74.5831,
+        "median": 75.0,
+        "p90": 75.0,
+        "p95": 75.0,
+        "p99": 75.0,
+        "max": 75
+      },
+      "singleton_mean": 74.90484581497797,
+      "singleton_p95": 75.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.7193582325092057,
+          "complete_entity_recall": 0.5005264081417793,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7068571607411117,
+          "complete_entity_recall": 0.4430780696851127,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7080185385054917,
+          "complete_entity_recall": 0.3952695724023962,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7018729484456459,
+          "complete_entity_recall": 0.47407670454545453,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7098566308243728,
+          "complete_entity_recall": 0.6324958316564135,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.7041745836593272,
+          "complete_entity_recall": 0.6050190633357992,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.6879691029658238,
+          "complete_entity_recall": 0.4230614704700683,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7059525480836726,
+          "complete_entity_recall": 0.4386839481555334,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.7033228401539,
+          "complete_entity_recall": 0.493389296956978,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.6915566447940549,
+          "complete_entity_recall": 0.4229539641943734,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.7074500302846759,
+          "complete_entity_recall": 0.5757116898849183,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.687305900621118,
+          "complete_entity_recall": 0.4539333805811481,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.7012048192771084,
+          "complete_entity_recall": 0.6141304347826086,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.5521124445175078,
+          "complete_entity_recall": 0.0,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.703405017921147,
+          "complete_entity_recall": 0.703405017921147,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7153314355429036,
+          "complete_entity_recall": 0.6393188854489165,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    }
+  },
+  "greedy_order": [
+    "address_char",
+    "name_char"
+  ],
+  "cap_metrics": {
+    "50": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7632673095801813,
+      "complete_entity_recall": 0.5567983037370793,
+      "at_least_one_recall": 0.9045322024913862,
+      "candidates": {
+        "mean": 49.89865,
+        "median": 50.0,
+        "p90": 50.0,
+        "p95": 50.0,
+        "p99": 50.0,
+        "max": 50
+      },
+      "singleton_mean": 50.0,
+      "singleton_p95": 50.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.784467505140835,
+          "complete_entity_recall": 0.5952798736620459,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7629569354031046,
+          "complete_entity_recall": 0.5335072355754301,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7623854570080206,
+          "complete_entity_recall": 0.48512703986779593,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7350839930488511,
+          "complete_entity_recall": 0.5255681818181818,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7574671445639187,
+          "complete_entity_recall": 0.6856781463807279,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.76869341678775,
+          "complete_entity_recall": 0.6832640983326694,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.7309626175034614,
+          "complete_entity_recall": 0.49805812240524977,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7336796293696476,
+          "complete_entity_recall": 0.4752884204529269,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.7641832808674361,
+          "complete_entity_recall": 0.5844700944386149,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.7281208000632461,
+          "complete_entity_recall": 0.4768222506393862,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.767565112053301,
+          "complete_entity_recall": 0.6571774682010902,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.672069099378882,
+          "complete_entity_recall": 0.4344436569808646,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.7676419965576592,
+          "complete_entity_recall": 0.6881793478260869,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.6643925694558606,
+          "complete_entity_recall": 0.2365553602811951,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.7634408602150538,
+          "complete_entity_recall": 0.7634408602150538,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7661651077673851,
+          "complete_entity_recall": 0.6973684210526315,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "75": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7784402610151874,
+      "complete_entity_recall": 0.5789557381394116,
+      "at_least_one_recall": 0.9142327060694407,
+      "candidates": {
+        "mean": 74.8456,
+        "median": 75.0,
+        "p90": 75.0,
+        "p95": 75.0,
+        "p99": 75.0,
+        "max": 75
+      },
+      "singleton_mean": 74.97092511013216,
+      "singleton_p95": 75.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.7959925398115825,
+          "complete_entity_recall": 0.6127390770310581,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7781672508763144,
+          "complete_entity_recall": 0.5563629588224334,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7777918862294457,
+          "complete_entity_recall": 0.5104317289816154,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7496620969299093,
+          "complete_entity_recall": 0.5458096590909091,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7718936678614098,
+          "complete_entity_recall": 0.7031564422468809,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.7845646585447636,
+          "complete_entity_recall": 0.7021567176919137,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.7516942359542375,
+          "complete_entity_recall": 0.5273871702156153,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7479994384388601,
+          "complete_entity_recall": 0.49508617006124483,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.7785239594263729,
+          "complete_entity_recall": 0.6031479538300105,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.7442880860147048,
+          "complete_entity_recall": 0.4984015345268542,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.7828588734100546,
+          "complete_entity_recall": 0.6774682010902483,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.6857531055900621,
+          "complete_entity_recall": 0.45074415308291993,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.7848537005163512,
+          "complete_entity_recall": 0.7099184782608695,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.6831333223738287,
+          "complete_entity_recall": 0.2650263620386643,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.7786738351254481,
+          "complete_entity_recall": 0.7786738351254481,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7779585197234649,
+          "complete_entity_recall": 0.7113003095975232,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "100": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7861783218802333,
+      "complete_entity_recall": 0.5908295785846807,
+      "at_least_one_recall": 0.9183673469387755,
+      "candidates": {
+        "mean": 91.48835,
+        "median": 100.0,
+        "p90": 100.0,
+        "p95": 100.0,
+        "p99": 100.0,
+        "max": 100
+      },
+      "singleton_mean": 91.79911894273128,
+      "singleton_p95": 100.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.8023050069341495,
+          "complete_entity_recall": 0.6223898929636779,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7858819479218828,
+          "complete_entity_recall": 0.5685982237128129,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7858125410026877,
+          "complete_entity_recall": 0.5234455690972939,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7576752268777757,
+          "complete_entity_recall": 0.5596590909090909,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.778584229390681,
+          "complete_entity_recall": 0.7106882078997298,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.7932826645803063,
+          "complete_entity_recall": 0.7133670972514653,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.7616046054069809,
+          "complete_entity_recall": 0.5426543457881344,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.753544854696055,
+          "complete_entity_recall": 0.5043441105255662,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.785099685204617,
+          "complete_entity_recall": 0.6136411332633788,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.7506917542888766,
+          "complete_entity_recall": 0.5083120204603581,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.7914900060569352,
+          "complete_entity_recall": 0.6901877649909146,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.687305900621118,
+          "complete_entity_recall": 0.4539333805811481,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.7927710843373494,
+          "complete_entity_recall": 0.7214673913043478,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.6958737465066579,
+          "complete_entity_recall": 0.28646748681898065,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.7840501792114696,
+          "complete_entity_recall": 0.7840501792114696,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7860919072793818,
+          "complete_entity_recall": 0.7190402476780186,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "125": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7913466535774095,
+      "complete_entity_recall": 0.598886827458256,
+      "at_least_one_recall": 0.9217068645640074,
+      "candidates": {
+        "mean": 108.11345,
+        "median": 125.0,
+        "p90": 125.0,
+        "p95": 125.0,
+        "p99": 125.0,
+        "max": 125
+      },
+      "singleton_mean": 108.60352422907489,
+      "singleton_p95": 125.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.8062263880254411,
+          "complete_entity_recall": 0.6281803825232497,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7909520530796195,
+          "complete_entity_recall": 0.5766722563815913,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7908492582481536,
+          "complete_entity_recall": 0.5317083247262963,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7623093261247345,
+          "complete_entity_recall": 0.56640625,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7829749103942653,
+          "complete_entity_recall": 0.7160351865693095,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.7991784955851123,
+          "complete_entity_recall": 0.720650998691174,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.7686730306784231,
+          "complete_entity_recall": 0.5541716887638944,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7570195142496139,
+          "complete_entity_recall": 0.509898874804159,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.7899965022735222,
+          "complete_entity_recall": 0.621196222455404,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.7538540596094553,
+          "complete_entity_recall": 0.5135869565217391,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.7975469412477286,
+          "complete_entity_recall": 0.6980617807389461,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.687791149068323,
+          "complete_entity_recall": 0.45499645641389086,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.7975903614457831,
+          "complete_entity_recall": 0.7282608695652174,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.702778234423804,
+          "complete_entity_recall": 0.2977152899824253,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.793010752688172,
+          "complete_entity_recall": 0.793010752688172,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7942252948352989,
+          "complete_entity_recall": 0.728328173374613,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "150": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7974244961598429,
+      "complete_entity_recall": 0.6097535117943281,
+      "at_least_one_recall": 0.924198250728863,
+      "candidates": {
+        "mean": 123.7352,
+        "median": 147.0,
+        "p90": 150.0,
+        "p95": 150.0,
+        "p99": 150.0,
+        "max": 150
+      },
+      "singleton_mean": 125.04493392070485,
+      "singleton_p95": 150.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.8109607383673665,
+          "complete_entity_recall": 0.635813300579049,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7970706059088633,
+          "complete_entity_recall": 0.5878516862306689,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7971980614987408,
+          "complete_entity_recall": 0.5442057426151622,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7680054064491214,
+          "complete_entity_recall": 0.5731534090909091,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7884408602150538,
+          "complete_entity_recall": 0.7228770194905997,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.8058287694199173,
+          "complete_entity_recall": 0.7294144426108234,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.7767980762224004,
+          "complete_entity_recall": 0.5699745547073791,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7611961252281342,
+          "complete_entity_recall": 0.5160233584959407,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.7951031829310948,
+          "complete_entity_recall": 0.6302203567681007,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.7583208158747727,
+          "complete_entity_recall": 0.5201406649616368,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.8034524530587522,
+          "complete_entity_recall": 0.7077528770442156,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.688373447204969,
+          "complete_entity_recall": 0.4553508150248051,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.8048192771084337,
+          "complete_entity_recall": 0.7391304347826086,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.7144501068551702,
+          "complete_entity_recall": 0.32126537785588755,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.8010752688172043,
+          "complete_entity_recall": 0.8010752688172043,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7978853192354616,
+          "complete_entity_recall": 0.7352941176470589,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "200": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7974244961598429,
+      "complete_entity_recall": 0.6097535117943281,
+      "at_least_one_recall": 0.924198250728863,
+      "candidates": {
+        "mean": 123.7352,
+        "median": 147.0,
+        "p90": 150.0,
+        "p95": 150.0,
+        "p99": 150.0,
+        "max": 150
+      },
+      "singleton_mean": 125.04493392070485,
+      "singleton_p95": 150.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.8109607383673665,
+          "complete_entity_recall": 0.635813300579049,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7970706059088633,
+          "complete_entity_recall": 0.5878516862306689,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7971980614987408,
+          "complete_entity_recall": 0.5442057426151622,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.7680054064491214,
+          "complete_entity_recall": 0.5731534090909091,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7884408602150538,
+          "complete_entity_recall": 0.7228770194905997,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.8058287694199173,
+          "complete_entity_recall": 0.7294144426108234,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.7767980762224004,
+          "complete_entity_recall": 0.5699745547073791,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7611961252281342,
+          "complete_entity_recall": 0.5160233584959407,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.7951031829310948,
+          "complete_entity_recall": 0.6302203567681007,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.7583208158747727,
+          "complete_entity_recall": 0.5201406649616368,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.8034524530587522,
+          "complete_entity_recall": 0.7077528770442156,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.688373447204969,
+          "complete_entity_recall": 0.4553508150248051,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.8048192771084337,
+          "complete_entity_recall": 0.7391304347826086,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.7144501068551702,
+          "complete_entity_recall": 0.32126537785588755,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.8010752688172043,
+          "complete_entity_recall": 0.8010752688172043,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7978853192354616,
+          "complete_entity_recall": 0.7352941176470589,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    }
+  },
+  "selected_cap": 150,
+  "selected_configuration": "reciprocal-rank fusion of address_char, name_char",
+  "selected_development": {
+    "queries": 20000,
+    "true_pairs": 69268,
+    "pair_recall": 0.7974244961598429,
+    "complete_entity_recall": 0.6097535117943281,
+    "at_least_one_recall": 0.924198250728863,
+    "candidates": {
+      "mean": 123.7352,
+      "median": 147.0,
+      "p90": 150.0,
+      "p95": 150.0,
+      "p99": 150.0,
+      "max": 150
+    },
+    "singleton_mean": 125.04493392070485,
+    "singleton_p95": 150.0,
+    "breakdowns": {
+      "country=US": {
+        "pair_recall": 0.8109607383673665,
+        "complete_entity_recall": 0.635813300579049,
+        "pairs": 41822,
+        "matched_entities": 11398
+      },
+      "profile=both": {
+        "pair_recall": 0.7970706059088633,
+        "complete_entity_recall": 0.5878516862306689,
+        "pairs": 63904,
+        "matched_entities": 16101
+      },
+      "multiplicity=4+": {
+        "pair_recall": 0.7971980614987408,
+        "complete_entity_recall": 0.5442057426151622,
+        "pairs": 47253,
+        "matched_entities": 9682
+      },
+      "short_name": {
+        "pair_recall": 0.7680054064491214,
+        "complete_entity_recall": 0.5731534090909091,
+        "pairs": 10358,
+        "matched_entities": 2816
+      },
+      "source=S2": {
+        "pair_recall": 0.7884408602150538,
+        "complete_entity_recall": 0.7228770194905997,
+        "pairs": 33480,
+        "matched_entities": 17393
+      },
+      "source=S3": {
+        "pair_recall": 0.8058287694199173,
+        "complete_entity_recall": 0.7294144426108234,
+        "pairs": 35788,
+        "matched_entities": 17573
+      },
+      "country=India": {
+        "pair_recall": 0.7767980762224004,
+        "complete_entity_recall": 0.5699745547073791,
+        "pairs": 27446,
+        "matched_entities": 7467
+      },
+      "weak_lexical": {
+        "pair_recall": 0.7611961252281342,
+        "complete_entity_recall": 0.5160233584959407,
+        "pairs": 28492,
+        "matched_entities": 7021
+      },
+      "multiplicity=3": {
+        "pair_recall": 0.7951031829310948,
+        "complete_entity_recall": 0.6302203567681007,
+        "pairs": 14295,
+        "matched_entities": 4765
+      },
+      "nonascii_target_name": {
+        "pair_recall": 0.7583208158747727,
+        "complete_entity_recall": 0.5201406649616368,
+        "pairs": 25298,
+        "matched_entities": 6256
+      },
+      "multiplicity=2": {
+        "pair_recall": 0.8034524530587522,
+        "complete_entity_recall": 0.7077528770442156,
+        "pairs": 6604,
+        "matched_entities": 3302
+      },
+      "high_repeated_name": {
+        "pair_recall": 0.688373447204969,
+        "complete_entity_recall": 0.4553508150248051,
+        "pairs": 10304,
+        "matched_entities": 2822
+      },
+      "profile=S3_only": {
+        "pair_recall": 0.8048192771084337,
+        "complete_entity_recall": 0.7391304347826086,
+        "pairs": 2905,
+        "matched_entities": 1472
+      },
+      "missing_target_address": {
+        "pair_recall": 0.7144501068551702,
+        "complete_entity_recall": 0.32126537785588755,
+        "pairs": 12166,
+        "matched_entities": 2845
+      },
+      "multiplicity=1": {
+        "pair_recall": 0.8010752688172043,
+        "complete_entity_recall": 0.8010752688172043,
+        "pairs": 1116,
+        "matched_entities": 1116
+      },
+      "profile=singleton": {
+        "pair_recall": null,
+        "complete_entity_recall": null,
+        "pairs": 0,
+        "matched_entities": 0
+      },
+      "multiplicity=0": {
+        "pair_recall": null,
+        "complete_entity_recall": null,
+        "pairs": 0,
+        "matched_entities": 0
+      },
+      "profile=S2_only": {
+        "pair_recall": 0.7978853192354616,
+        "complete_entity_recall": 0.7352941176470589,
+        "pairs": 2459,
+        "matched_entities": 1292
+      }
+    }
+  },
+  "confirmation": {
+    "queries": 7500,
+    "true_pairs": 26066,
+    "pair_recall": 0.7934474027468733,
+    "complete_entity_recall": 0.6106182227855231,
+    "at_least_one_recall": 0.9207153921982819,
+    "candidates": {
+      "mean": 123.73013333333333,
+      "median": 147.0,
+      "p90": 150.0,
+      "p95": 150.0,
+      "p99": 150.0,
+      "max": 150
+    },
+    "singleton_mean": 124.42105263157895,
+    "singleton_p95": 150.0,
+    "breakdowns": {
+      "country=US": {
+        "pair_recall": 0.8214536404824198,
+        "complete_entity_recall": 0.655868544600939,
+        "pairs": 15671,
+        "matched_entities": 4260
+      },
+      "profile=both": {
+        "pair_recall": 0.7930370742321533,
+        "complete_entity_recall": 0.5910817506193229,
+        "pairs": 23898,
+        "matched_entities": 6055
+      },
+      "multiplicity=4+": {
+        "pair_recall": 0.7888831938037474,
+        "complete_entity_recall": 0.5399165507649514,
+        "pairs": 17559,
+        "matched_entities": 3595
+      },
+      "nonascii_target_name": {
+        "pair_recall": 0.7458518818292189,
+        "complete_entity_recall": 0.5152514427040396,
+        "pairs": 9884,
+        "matched_entities": 2426
+      },
+      "source=S2": {
+        "pair_recall": 0.7855840139560701,
+        "complete_entity_recall": 0.7228252560770524,
+        "pairs": 12611,
+        "matched_entities": 6541
+      },
+      "source=S3": {
+        "pair_recall": 0.8008175399479748,
+        "complete_entity_recall": 0.728344671201814,
+        "pairs": 13455,
+        "matched_entities": 6615
+      },
+      "weak_lexical": {
+        "pair_recall": 0.7483056355027389,
+        "complete_entity_recall": 0.5005723006486074,
+        "pairs": 10771,
+        "matched_entities": 2621
+      },
+      "multiplicity=2": {
+        "pair_recall": 0.8019157088122605,
+        "complete_entity_recall": 0.7042145593869732,
+        "pairs": 2610,
+        "matched_entities": 1305
+      },
+      "country=India": {
+        "pair_recall": 0.7512265512265512,
+        "complete_entity_recall": 0.542766631467793,
+        "pairs": 10395,
+        "matched_entities": 2841
+      },
+      "profile=singleton": {
+        "pair_recall": null,
+        "complete_entity_recall": null,
+        "pairs": 0,
+        "matched_entities": 0
+      },
+      "multiplicity=0": {
+        "pair_recall": null,
+        "complete_entity_recall": null,
+        "pairs": 0,
+        "matched_entities": 0
+      },
+      "short_name": {
+        "pair_recall": 0.7954545454545454,
+        "complete_entity_recall": 0.623541887592789,
+        "pairs": 3476,
+        "matched_entities": 943
+      },
+      "multiplicity=3": {
+        "pair_recall": 0.8055555555555556,
+        "complete_entity_recall": 0.6520562770562771,
+        "pairs": 5544,
+        "matched_entities": 1848
+      },
+      "profile=S2_only": {
+        "pair_recall": 0.7979695431472081,
+        "complete_entity_recall": 0.7345679012345679,
+        "pairs": 985,
+        "matched_entities": 486
+      },
+      "multiplicity=1": {
+        "pair_recall": 0.7677053824362606,
+        "complete_entity_recall": 0.7677053824362606,
+        "pairs": 353,
+        "matched_entities": 353
+      },
+      "missing_target_address": {
+        "pair_recall": 0.7091073855913004,
+        "complete_entity_recall": 0.32806691449814124,
+        "pairs": 4414,
+        "matched_entities": 1076
+      },
+      "high_repeated_name": {
+        "pair_recall": 0.6692131398013751,
+        "complete_entity_recall": 0.4337121212121212,
+        "pairs": 3927,
+        "matched_entities": 1056
+      },
+      "profile=S3_only": {
+        "pair_recall": 0.797971259509721,
+        "complete_entity_recall": 0.7142857142857143,
+        "pairs": 1183,
+        "matched_entities": 560
+      }
+    }
+  },
+  "source_budget_experiment": {
+    "address_char:20+20": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.6824652075994687,
+      "complete_entity_recall": 0.4469652796183408,
+      "at_least_one_recall": 0.8479194275112643,
+      "candidates": {
+        "mean": 27.96875,
+        "median": 25.0,
+        "p90": 40.0,
+        "p95": 40.0,
+        "p99": 40.0,
+        "max": 40
+      },
+      "singleton_mean": 27.602643171806168,
+      "singleton_p95": 40.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.6998947922146239,
+          "complete_entity_recall": 0.4814879803474294,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.6825081372058087,
+          "complete_entity_recall": 0.4209676417613813,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.6834909952807229,
+          "complete_entity_recall": 0.37182400330510224,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.6768681212589303,
+          "complete_entity_recall": 0.4513494318181818,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.695489844683393,
+          "complete_entity_recall": 0.6160524348875984,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.6702805409634515,
+          "complete_entity_recall": 0.5703067205371878,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.6559061429716534,
+          "complete_entity_recall": 0.3942681130306683,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.681910711778745,
+          "complete_entity_recall": 0.4150405925081897,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.6783490731024834,
+          "complete_entity_recall": 0.472193074501574,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.6659419716973674,
+          "complete_entity_recall": 0.39881713554987214,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.6845850999394306,
+          "complete_entity_recall": 0.5523924894003635,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.6611995341614907,
+          "complete_entity_recall": 0.4284195605953225,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.6660929432013769,
+          "complete_entity_recall": 0.576766304347826,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.5295906625020549,
+          "complete_entity_recall": 0.0,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.6792114695340502,
+          "complete_entity_recall": 0.6792114695340502,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7006913379422529,
+          "complete_entity_recall": 0.6230650154798761,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "address_char:30+30": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.6936247617947682,
+      "complete_entity_recall": 0.45931619401007157,
+      "at_least_one_recall": 0.8569838324940365,
+      "candidates": {
+        "mean": 39.40845,
+        "median": 35.0,
+        "p90": 60.0,
+        "p95": 60.0,
+        "p99": 60.0,
+        "max": 60
+      },
+      "singleton_mean": 39.075770925110135,
+      "singleton_p95": 60.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.7076897326765818,
+          "complete_entity_recall": 0.4910510615897526,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.6936029043565348,
+          "complete_entity_recall": 0.4333892304825787,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.6945379129367447,
+          "complete_entity_recall": 0.38514769675686844,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.6882602819077042,
+          "complete_entity_recall": 0.4641335227272727,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7047491039426523,
+          "complete_entity_recall": 0.626861381015351,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.6832178383815805,
+          "complete_entity_recall": 0.5840778466966369,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.6721926692414195,
+          "complete_entity_recall": 0.4108745145306013,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.6935982030043522,
+          "complete_entity_recall": 0.42956843754450935,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.6903112976565232,
+          "complete_entity_recall": 0.4837355718782791,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.6781563759981026,
+          "complete_entity_recall": 0.4127237851662404,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.6950333131435493,
+          "complete_entity_recall": 0.5639006662628709,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.6745923913043478,
+          "complete_entity_recall": 0.443656980864635,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.680895008605852,
+          "complete_entity_recall": 0.5903532608695652,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.5399473943777742,
+          "complete_entity_recall": 0.0,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.6890681003584229,
+          "complete_entity_recall": 0.6890681003584229,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7092313948759659,
+          "complete_entity_recall": 0.6331269349845201,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    },
+    "address_char:50+50": {
+      "queries": 20000,
+      "true_pairs": 69268,
+      "pair_recall": 0.7019114165271121,
+      "complete_entity_recall": 0.467479459316194,
+      "at_least_one_recall": 0.8659952292605354,
+      "candidates": {
+        "mean": 58.6776,
+        "median": 55.0,
+        "p90": 75.0,
+        "p95": 75.0,
+        "p99": 75.0,
+        "max": 75
+      },
+      "singleton_mean": 58.418502202643175,
+      "singleton_p95": 75.0,
+      "breakdowns": {
+        "country=US": {
+          "pair_recall": 0.7145521495863422,
+          "complete_entity_recall": 0.49824530619406915,
+          "pairs": 41822,
+          "matched_entities": 11398
+        },
+        "profile=both": {
+          "pair_recall": 0.7018809464196294,
+          "complete_entity_recall": 0.4412769393205391,
+          "pairs": 63904,
+          "matched_entities": 16101
+        },
+        "multiplicity=4+": {
+          "pair_recall": 0.7026008930649906,
+          "complete_entity_recall": 0.39299731460442056,
+          "pairs": 47253,
+          "matched_entities": 9682
+        },
+        "short_name": {
+          "pair_recall": 0.6956941494497008,
+          "complete_entity_recall": 0.4715909090909091,
+          "pairs": 10358,
+          "matched_entities": 2816
+        },
+        "source=S2": {
+          "pair_recall": 0.7087514934289127,
+          "complete_entity_recall": 0.6315759213476686,
+          "pairs": 33480,
+          "matched_entities": 17393
+        },
+        "source=S3": {
+          "pair_recall": 0.6955124622778585,
+          "complete_entity_recall": 0.5970522961361179,
+          "pairs": 35788,
+          "matched_entities": 17573
+        },
+        "country=India": {
+          "pair_recall": 0.6826495664213365,
+          "complete_entity_recall": 0.4205169412079818,
+          "pairs": 27446,
+          "matched_entities": 7467
+        },
+        "weak_lexical": {
+          "pair_recall": 0.7013898638214235,
+          "complete_entity_recall": 0.4364050705027774,
+          "pairs": 28492,
+          "matched_entities": 7021
+        },
+        "multiplicity=3": {
+          "pair_recall": 0.6992654774396643,
+          "complete_entity_recall": 0.491710388247639,
+          "pairs": 14295,
+          "matched_entities": 4765
+        },
+        "nonascii_target_name": {
+          "pair_recall": 0.6865364850976362,
+          "complete_entity_recall": 0.421195652173913,
+          "pairs": 25298,
+          "matched_entities": 6256
+        },
+        "multiplicity=2": {
+          "pair_recall": 0.7033615990308903,
+          "complete_entity_recall": 0.5729860690490611,
+          "pairs": 6604,
+          "matched_entities": 3302
+        },
+        "high_repeated_name": {
+          "pair_recall": 0.6817740683229814,
+          "complete_entity_recall": 0.45038979447200567,
+          "pairs": 10304,
+          "matched_entities": 2822
+        },
+        "profile=S3_only": {
+          "pair_recall": 0.6925989672977625,
+          "complete_entity_recall": 0.6046195652173914,
+          "pairs": 2905,
+          "matched_entities": 1472
+        },
+        "missing_target_address": {
+          "pair_recall": 0.5466052934407365,
+          "complete_entity_recall": 0.0,
+          "pairs": 12166,
+          "matched_entities": 2845
+        },
+        "multiplicity=1": {
+          "pair_recall": 0.6980286738351255,
+          "complete_entity_recall": 0.6980286738351255,
+          "pairs": 1116,
+          "matched_entities": 1116
+        },
+        "profile=singleton": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "multiplicity=0": {
+          "pair_recall": null,
+          "complete_entity_recall": null,
+          "pairs": 0,
+          "matched_entities": 0
+        },
+        "profile=S2_only": {
+          "pair_recall": 0.7137047580317202,
+          "complete_entity_recall": 0.6377708978328174,
+          "pairs": 2459,
+          "matched_entities": 1292
+        }
+      }
+    }
+  },
+  "runtime_seconds": 290.46800000000076,
+  "artifact_bytes": 77785663,
+  "decision": "Blocking does not meet the stated freeze criteria. Next: inspect confirmation misses and add only a measured rescue channel targeted at the dominant class; do not start the matcher."
+}

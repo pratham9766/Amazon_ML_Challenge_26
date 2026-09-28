@@ -1,0 +1,81 @@
+experiment_id,timestamp,stage,model,features,blocking_strategy,candidate_cap,fold_strategy,threshold,precision,recall,f0_5,singleton_accuracy,blocking_recall,mean_candidates,runtime,RAM,notes
+B000_prev_codex_rrf,2026-09-25T23:33:42,blocker-dev20k,,,"RRF(address_char,name_char) approx inverted (previous phase)",150,,,,,,,0.79742,123.7,,,from blocking/reports/blocking_report.md; complete=0.60975
+B001_00,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@10",20,,,,,,,0.80897,20.0,,,complete=0.5608 atleast1=0.9668 p95=20.0
+B001_01,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: name_w12@10",20,,,,,,,0.58765,20.0,,,complete=0.2850 atleast1=0.8328 p95=20.0
+B001_02,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: comb_w12@10",20,,,,,,,0.9376,20.0,,,complete=0.8203 atleast1=0.9942 p95=20.0
+B001_03,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: codes@10",20,,,,,,,0.21646,17.7,,,complete=0.1063 atleast1=0.3496 p95=20.0
+B001_04,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@10+name_w12@10+comb_w12@10+codes@10",80,,,,,,,0.95216,60.7,,,complete=0.8577 atleast1=0.9959 p95=72.0
+B001_05,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@20",40,,,,,,,0.84069,40.0,,,complete=0.6118 atleast1=0.9751 p95=40.0
+B001_06,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: name_w12@20",40,,,,,,,0.63302,39.9,,,complete=0.3288 atleast1=0.8713 p95=40.0
+B001_07,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: comb_w12@20",40,,,,,,,0.95402,40.0,,,complete=0.8642 atleast1=0.9958 p95=40.0
+B001_08,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: codes@20",40,,,,,,,0.25186,34.8,,,complete=0.1259 atleast1=0.4046 p95=40.0
+B001_09,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@20+name_w12@20+comb_w12@20+codes@20",158,,,,,,,0.9645,123.4,,,complete=0.8918 atleast1=0.9971 p95=143.0
+B001_10,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@30",60,,,,,,,0.85488,60.0,,,complete=0.6360 atleast1=0.9790 p95=60.0
+B001_11,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: name_w12@30",60,,,,,,,0.65703,59.8,,,complete=0.3522 atleast1=0.8904 p95=60.0
+B001_12,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: comb_w12@30",60,,,,,,,0.95994,60.0,,,complete=0.8791 atleast1=0.9964 p95=60.0
+B001_13,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: codes@30",60,,,,,,,0.27552,51.6,,,complete=0.1382 atleast1=0.4392 p95=60.0
+B001_14,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@30+name_w12@30+comb_w12@30+codes@30",236,,,,,,,0.96989,185.5,,,complete=0.9070 atleast1=0.9976 p95=214.0
+B001_15,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@50",100,,,,,,,0.87127,100.0,,,complete=0.6663 atleast1=0.9823 p95=100.0
+B001_16,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: name_w12@50",100,,,,,,,0.6846,99.5,,,complete=0.3765 atleast1=0.9120 p95=100.0
+B001_17,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: comb_w12@50",100,,,,,,,0.96603,100.0,,,complete=0.8965 atleast1=0.9969 p95=100.0
+B001_18,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: codes@50",100,,,,,,,0.31192,84.3,,,complete=0.1603 atleast1=0.4901 p95=100.0
+B001_19,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@50+name_w12@50+comb_w12@50+codes@50",394,,,,,,,0.97562,307.9,,,complete=0.9236 atleast1=0.9980 p95=353.0
+B001_20,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@100",200,,,,,,,0.89038,200.0,,,complete=0.7044 atleast1=0.9867 p95=200.0
+B001_21,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: name_w12@100",200,,,,,,,0.72406,198.3,,,complete=0.4214 atleast1=0.9333 p95=200.0
+B001_22,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: comb_w12@100",200,,,,,,,0.97341,200.0,,,complete=0.9185 atleast1=0.9976 p95=200.0
+B001_23,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: codes@100",200,,,,,,,0.36802,162.4,,,complete=0.1933 atleast1=0.5624 p95=200.0
+B001_24,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@100+name_w12@100+comb_w12@100+codes@100",790,,,,,,,0.98156,606.7,,,complete=0.9418 atleast1=0.9987 p95=698.0
+B001_25,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@200",400,,,,,,,0.90674,399.9,,,complete=0.7389 atleast1=0.9906 p95=400.0
+B001_26,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: name_w12@200",400,,,,,,,0.75328,393.4,,,complete=0.4652 atleast1=0.9426 p95=400.0
+B001_27,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: comb_w12@200",400,,,,,,,0.9796,400.0,,,complete=0.9368 atleast1=0.9980 p95=400.0
+B001_28,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: codes@200",400,,,,,,,0.43047,306.0,,,complete=0.2344 atleast1=0.6381 p95=400.0
+B001_29,2026-09-25T23:33:42,blocker-dev20k,,,"hashed word(1,2) tfidf per-source topk: addr_w12@200+name_w12@200+comb_w12@200+codes@200",1572,,,,,,,0.98656,1185.5,,,complete=0.9567 atleast1=0.9991 p95=1381.0
+B002_rrf_10,2026-09-25T23:49:58,blocker-dev20k,,,"fusion rrf over comb_w12,addr_w12,name_w12,codes (top200 pool)",20,,,,,,,0.93493,20.0,,,complete=0.8130
+B002_rrf_15,2026-09-25T23:50:02,blocker-dev20k,,,"fusion rrf over comb_w12,addr_w12,name_w12,codes (top200 pool)",30,,,,,,,0.94507,30.0,,,complete=0.8387
+B002_rrf_20,2026-09-25T23:50:06,blocker-dev20k,,,"fusion rrf over comb_w12,addr_w12,name_w12,codes (top200 pool)",40,,,,,,,0.95077,40.0,,,complete=0.8532
+B002_rrf_30,2026-09-25T23:50:10,blocker-dev20k,,,"fusion rrf over comb_w12,addr_w12,name_w12,codes (top200 pool)",60,,,,,,,0.95659,60.0,,,complete=0.8688
+B002_minrank_10,2026-09-25T23:50:17,blocker-dev20k,,,"fusion minrank over comb_w12,addr_w12,name_w12,codes (top200 pool)",20,,,,,,,0.91127,20.0,,,complete=0.7538
+B002_minrank_15,2026-09-25T23:50:24,blocker-dev20k,,,"fusion minrank over comb_w12,addr_w12,name_w12,codes (top200 pool)",30,,,,,,,0.93122,30.0,,,complete=0.8038
+B002_minrank_20,2026-09-25T23:50:27,blocker-dev20k,,,"fusion minrank over comb_w12,addr_w12,name_w12,codes (top200 pool)",40,,,,,,,0.94094,40.0,,,complete=0.8284
+B002_minrank_30,2026-09-25T23:50:30,blocker-dev20k,,,"fusion minrank over comb_w12,addr_w12,name_w12,codes (top200 pool)",60,,,,,,,0.95182,60.0,,,complete=0.8572
+"B002_w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2_10",2026-09-25T23:50:32,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2 over comb_w12,addr_w12,name_w12,codes (top200 pool)",20,,,,,,,0.9231,20.0,,,complete=0.7838
+"B002_w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2_15",2026-09-25T23:50:36,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2 over comb_w12,addr_w12,name_w12,codes (top200 pool)",30,,,,,,,0.93395,30.0,,,complete=0.8117
+"B002_w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2_20",2026-09-25T23:50:39,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2 over comb_w12,addr_w12,name_w12,codes (top200 pool)",40,,,,,,,0.93993,40.0,,,complete=0.8275
+"B002_w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2_30",2026-09-25T23:50:46,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.5,name_w12=0.5,codes=0.2 over comb_w12,addr_w12,name_w12,codes (top200 pool)",60,,,,,,,0.94731,60.0,,,complete=0.8472
+"B002_w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0_10",2026-09-25T23:50:54,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0 over comb_w12,addr_w12,name_w12,codes (top200 pool)",20,,,,,,,0.92748,20.0,,,complete=0.7932
+"B002_w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0_15",2026-09-25T23:51:01,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0 over comb_w12,addr_w12,name_w12,codes (top200 pool)",30,,,,,,,0.93818,30.0,,,complete=0.8209
+"B002_w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0_20",2026-09-25T23:51:04,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0 over comb_w12,addr_w12,name_w12,codes (top200 pool)",40,,,,,,,0.94495,40.0,,,complete=0.8386
+"B002_w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0_30",2026-09-25T23:51:14,blocker-dev20k,,,"fusion w:comb_w12=1,addr_w12=0.3,name_w12=0.3,codes=0 over comb_w12,addr_w12,name_w12,codes (top200 pool)",60,,,,,,,0.95273,60.0,,,complete=0.8591
+B003_comb_w12@20,2026-09-25T23:51:57,blocker-dev20k,,,union comb_w12@20,40,,,,,,,0.95402,40.0,,,complete=0.8642 rescue_eff=nan
+B003_comb_w12@20+name_w12@5,2026-09-25T23:51:59,blocker-dev20k,,,union comb_w12@20+name_w12@5,50,,,,,,,0.95542,45.5,,,complete=0.8679 rescue_eff=0.0009
+B003_comb_w12@20+addr_w12@5,2026-09-25T23:52:00,blocker-dev20k,,,union comb_w12@20+addr_w12@5,50,,,,,,,0.95558,41.3,,,complete=0.8680 rescue_eff=0.0041
+B003_comb_w12@20+codes@5,2026-09-25T23:52:01,blocker-dev20k,,,union comb_w12@20+codes@5,50,,,,,,,0.9553,48.1,,,complete=0.8674 rescue_eff=0.0006
+B003_comb_w12@20+name_w12@5+addr_w12@5,2026-09-25T23:52:03,blocker-dev20k,,,union comb_w12@20+name_w12@5+addr_w12@5,59,,,,,,,0.95698,46.9,,,complete=0.8716 rescue_eff=0.0015
+B003_comb_w12@20+name_w12@10+addr_w12@5,2026-09-25T23:52:05,blocker-dev20k,,,union comb_w12@20+name_w12@10+addr_w12@5,69,,,,,,,0.95787,55.1,,,complete=0.8742 rescue_eff=0.0009
+B003_comb_w12@25+name_w12@10+addr_w12@5+codes@3,2026-09-25T23:52:07,blocker-dev20k,,,union comb_w12@25+name_w12@10+addr_w12@5+codes@3,85,,,,,,,0.96104,69.0,,,complete=0.8818 rescue_eff=0.0008
+B003_comb_w12@30+name_w12@10+addr_w12@10,2026-09-25T23:52:10,blocker-dev20k,,,union comb_w12@30+name_w12@10+addr_w12@10,99,,,,,,,0.9634,76.4,,,complete=0.8883 rescue_eff=0.0009
+B003_comb_w12@15+name_w12@5+addr_w12@5,2026-09-25T23:52:11,blocker-dev20k,,,union comb_w12@15+name_w12@5+addr_w12@5,50,,,,,,,0.95224,37.6,,,complete=0.8586 rescue_eff=-123000000000.0018
+B004_comb_w12@20,2026-09-26T00:15:43,blocker-dev20k,,,union comb_w12@20 (comb_t=translit targets),40,,,,,,,0.95402,40.0,,,complete=0.8642 nonascii=0.8981
+B004_comb_t@20,2026-09-26T00:15:44,blocker-dev20k,,,union comb_t@20 (comb_t=translit targets),40,,,,,,,0.96453,40.0,,,complete=0.8881 nonascii=0.9789
+B004_comb_t@25,2026-09-26T00:15:46,blocker-dev20k,,,union comb_t@25 (comb_t=translit targets),50,,,,,,,0.96779,50.0,,,complete=0.8970 nonascii=0.9817
+B004_comb_t@20+addr_w12@5,2026-09-26T00:15:46,blocker-dev20k,,,union comb_t@20+addr_w12@5 (comb_t=translit targets),50,,,,,,,0.96518,41.3,,,complete=0.8900 nonascii=0.9790
+B004_comb_t@25+addr_w12@5,2026-09-26T00:15:47,blocker-dev20k,,,union comb_t@25+addr_w12@5 (comb_t=translit targets),60,,,,,,,0.9682,51.1,,,complete=0.8982 nonascii=0.9818
+B004_comb_t@20+addr_w12@5+name_w12@5,2026-09-26T00:15:48,blocker-dev20k,,,union comb_t@20+addr_w12@5+name_w12@5 (comb_t=translit targets),59,,,,,,,0.96668,47.0,,,complete=0.8940 nonascii=0.9796
+B004_comb_t@30+addr_w12@5,2026-09-26T00:15:50,blocker-dev20k,,,union comb_t@30+addr_w12@5 (comb_t=translit targets),70,,,,,,,0.97038,60.9,,,complete=0.9043 nonascii=0.9838
+B005_comb_t@25,2026-09-26T00:16:59,blocker-dev20k,,,union comb_t@25,50,,,,,,,0.96779,50.0,,,complete=0.8970 miss_addr=0.8266 rescue_eff=0.000
+B005_comb_t@25+name_na@2,2026-09-26T00:17:00,blocker-dev20k,,,union comb_t@25+name_na@2,54,,,,,,,0.96965,51.5,,,complete=0.9030 miss_addr=0.8682 rescue_eff=0.004
+B005_comb_t@25+name_na@3,2026-09-26T00:17:01,blocker-dev20k,,,union comb_t@25+name_na@3,56,,,,,,,0.96999,52.6,,,complete=0.9041 miss_addr=0.8756 rescue_eff=0.003
+B005_comb_t@25+name_na@5,2026-09-26T00:17:03,blocker-dev20k,,,union comb_t@25+name_na@5,60,,,,,,,0.97058,55.4,,,complete=0.9060 miss_addr=0.8888 rescue_eff=0.002
+B005_comb_t@20+name_na@3,2026-09-26T00:17:04,blocker-dev20k,,,union comb_t@20+name_na@3,46,,,,,,,0.96704,42.9,,,complete=0.8962 miss_addr=0.8733 rescue_eff=-52.000
+B005_comb_t@30+name_na@3,2026-09-26T00:17:05,blocker-dev20k,,,union comb_t@30+name_na@3,66,,,,,,,0.97209,62.5,,,complete=0.9100 miss_addr=0.8766 rescue_eff=0.001
+B006_FROZEN_confirmation,2026-09-26T00:17:22,blocker-conf7.5k,,,FROZEN comb_t@25+name_na@3,56,,,,,,,0.97142,52.6,,,complete=0.9089 atleast1=0.9982 single-use confirmation
+M1,2026-09-26T10:43:59,matcher-oof-dev20k,LightGBM,79 feats,FROZEN comb_t@25+name_na@3,56,GroupKFold(5) by S1,t=0.67 rel=0.0 t_top=None,0.97801,0.91434,0.95812,0.93392,0.97,52.6,37357,,"folds=[0.95991, 0.95688, 0.95554, 0.96094, 0.95733] CONF f05=0.95702 P=0.9762 R=0.9154 singleton=0.9323"
+M2,2026-09-26T11:11:01,matcher-oof-dev20k,LightGBM,84 feats,FROZEN comb_t@25+name_na@3,56,GroupKFold(5) by S1,t=0.69 rel=0.0 t_top=0.7899999999999999,0.98023,0.9221,0.96216,0.96123,0.97,52.6,1329,,"folds=[0.96464, 0.96012, 0.96233, 0.9631, 0.96061] CONF f05=0.96069 P=0.9780 R=0.9232 singleton=0.9649"
+M2S2,2026-09-26T11:23:01,matcher-oof-dev20k,LightGBM stage2 on M2 OOF,95 feats (+query ctx of stage-1 p),FROZEN comb_t@25+name_na@3,56,GroupKFold(5) by S1,t=0.69 rel=0.0 t_top=None,0.97866,0.92458,0.96199,0.95947,0.97,52.6,674,,"folds=[0.96282, 0.9612, 0.96038, 0.96338, 0.96215] CONF f05=0.96136 P=0.9777 R=0.9259 singleton=0.9649"
+AB_extra,2026-09-27T11:45:01,matcher-ab-dev-folds01,LightGBM M2 params,84 (M2),,,"dev GroupKFold(5) folds 0,1; train=dev\fold + 40k extra",M2 frozen t=0.69 t_top=0.7899999999999999,,,0.96642,,,,,,"[{""fold"": 0, ""m2"": 0.96464, ""m2_plus_extra"": 0.96803, ""iters"": 660}, {""fold"": 1, ""m2"": 0.96012, ""m2_plus_extra"": 0.96481, ""iters"": 754}]"
+M5_compete,2026-09-27T12:58:05,matcher-oof-dense62k,LightGBM stage2 (competition) on M2,100 (+claimant competition +query ctx),,,dense region GroupKFold(5) by S1,t=0.72 t_top=None 1to1=True,0.98556,0.9367,0.97072,0.97585,,,,,same queries: M2=0.96439 M2+1to1=0.96653
+M6_compete,2026-09-27T15:25:33,matcher-oof-dense62k,LightGBM stage2 (competition) on M3F,100 (+claimant competition +query ctx),,,dense region GroupKFold(5) by S1,t=0.72 t_top=None 1to1=True,0.98621,0.9383,0.97169,0.97851,,,,,same queries: M3F=0.96813 M3F+1to1=0.96988
+M5B_compete,2026-09-27T17:45:35,matcher-oof-denseB,LightGBM competition stage on M2,100 (+claimant competition +query ctx),,,dense region (excl. bench+extra) GroupKFold(5) by S1,t=0.76 t_top=None 1to1=True,0.98632,0.93486,0.97078,0.97967,,,,,"same queries, stage1 M2 best rule=0.96683"
+M6B_compete,2026-09-27T18:14:31,matcher-oof-denseB,LightGBM competition stage on M3F,100 (+claimant competition +query ctx),,,dense region (excl. bench+extra) GroupKFold(5) by S1,t=0.72 t_top=None 1to1=True,0.98621,0.9383,0.97169,0.97851,,,,,"same queries, stage1 M3F best rule=0.97001"
+R2_compete,2026-09-27T18:26:57,matcher-oof-denseB,LightGBM competition stage on M6B,100 (+claimant competition +query ctx),,,dense region (excl. bench+extra) GroupKFold(5) by S1,t=0.64 t_top=None 1to1=True,0.98499,0.94085,0.97143,0.97735,,,,,"same queries, stage1 M6B best rule=0.97169"
+M8_ownership,2026-09-27T20:29:55,matcher-oof-dense-regions,LightGBM ownership stage on M3F,108 (rich claimant tables + ctx),,,GroupKFold(5) over dense regions 1+2 (excl bench+extra),"iso/ef05 rule=(0.68, None) +1to1",,,0.97334,,,,,,region1: M8 0.9730120161065647 vs M6B 0.97169

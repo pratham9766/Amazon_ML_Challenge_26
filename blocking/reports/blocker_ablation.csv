@@ -1,0 +1,3 @@
+configuration,pair_recall,delta_pair_recall,complete_entity_recall,mean_candidates,delta_candidates,p95_candidates
+address_char,0.7069209447363862,0.7069209447363862,0.4698648290485025,74.5831,74.5831,75.0
+address_char + name_char,0.7974244961598429,0.09050355142345667,0.6097535117943281,123.7352,49.152100000000004,150.0

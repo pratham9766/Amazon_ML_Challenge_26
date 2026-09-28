@@ -1,0 +1,10 @@
+{
+ "channels": {
+  "comb_t": 25,
+  "name_na": 3
+ },
+ "comb_t": "hashed word(1,2) tfidf, max_df=0.02, sublinear, targets transliterated with train-learned dict",
+ "name_na": "same on name only, index = targets with empty address",
+ "country_gating": true,
+ "per_source": true
+}

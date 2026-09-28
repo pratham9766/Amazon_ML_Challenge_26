@@ -1,0 +1,196 @@
+{
+ "dev": {
+  "queries": 20000,
+  "true_pairs": 69268,
+  "pair_recall": 0.9699861407865104,
+  "complete_entity_recall": 0.9040551285449244,
+  "at_least_one_recall": 0.9981447124304267,
+  "mean": 52.6496,
+  "median": 52.0,
+  "p90": 56.0,
+  "p95": 56.0,
+  "p99": 56.0,
+  "max": 56,
+  "total_candidates": 1052992,
+  "singleton_mean": 52.59911894273128,
+  "groups": {
+   "all": {
+    "pairs": 69268,
+    "pair_recall": 0.9699861407865104,
+    "complete": 0.9040551285449244
+   },
+   "country=US": {
+    "pairs": 41822,
+    "pair_recall": 0.970254889770934,
+    "complete": 0.9040182488155817
+   },
+   "country=India": {
+    "pairs": 27446,
+    "pair_recall": 0.9695766231873497,
+    "complete": 0.9041114235971608
+   },
+   "source=S2": {
+    "pairs": 33480,
+    "pair_recall": 0.977389486260454,
+    "complete": 0.9595814408095211
+   },
+   "source=S3": {
+    "pairs": 35788,
+    "pair_recall": 0.9630602436570918,
+    "complete": 0.9322824788027086
+   },
+   "mult=1": {
+    "pairs": 1116,
+    "pair_recall": 0.9758064516129032,
+    "complete": 0.9758064516129032
+   },
+   "mult=2": {
+    "pairs": 6604,
+    "pair_recall": 0.9735009085402786,
+    "complete": 0.949121744397335
+   },
+   "mult=3": {
+    "pairs": 14295,
+    "pair_recall": 0.9703392794683455,
+    "complete": 0.9189926547743966
+   },
+   "mult=4+": {
+    "pairs": 47253,
+    "pair_recall": 0.9692506295896557,
+    "complete": 0.8730634166494526
+   },
+   "mult=6+": {
+    "pairs": 14950,
+    "pair_recall": 0.971304347826087,
+    "complete": 0.8547486033519553
+   },
+   "t_name_nonascii": {
+    "pairs": 9473,
+    "pair_recall": 0.9822653858334213,
+    "complete": 0.975383631713555
+   },
+   "t_addr_nonascii": {
+    "pairs": 6109,
+    "pair_recall": 0.9747912915370764,
+    "complete": 0.9658159681573402
+   },
+   "t_addr_missing": {
+    "pairs": 3103,
+    "pair_recall": 0.8756042539477925,
+    "complete": 0.8671353251318102
+   },
+   "no_shared_name_token": {
+    "pairs": 9899,
+    "pair_recall": 0.921406202646732,
+    "complete": 0.8904355635383925
+   },
+   "short_name": {
+    "pairs": 1358,
+    "pair_recall": 0.9631811487481591,
+    "complete": 0.8955613577023499
+   },
+   "repeated_name": {
+    "pairs": 27206,
+    "pair_recall": 0.9599720649856649,
+    "complete": 0.8783004959120762
+   }
+  }
+ },
+ "conf": {
+  "queries": 7500,
+  "true_pairs": 26066,
+  "pair_recall": 0.9714187063607765,
+  "complete_entity_recall": 0.9088860723841713,
+  "at_least_one_recall": 0.9981692719335304,
+  "mean": 52.63373333333333,
+  "median": 52.0,
+  "p90": 56.0,
+  "p95": 56.0,
+  "p99": 56.0,
+  "max": 56,
+  "total_candidates": 394753,
+  "singleton_mean": 52.54636591478697,
+  "groups": {
+   "all": {
+    "pairs": 26066,
+    "pair_recall": 0.9714187063607765,
+    "complete": 0.9088860723841713
+   },
+   "country=US": {
+    "pairs": 15671,
+    "pair_recall": 0.9728160296088316,
+    "complete": 0.9093896713615024
+   },
+   "country=India": {
+    "pairs": 10395,
+    "pair_recall": 0.9693121693121693,
+    "complete": 0.9081309398099261
+   },
+   "source=S2": {
+    "pairs": 12611,
+    "pair_recall": 0.9780350487669495,
+    "complete": 0.9599449625439536
+   },
+   "source=S3": {
+    "pairs": 13455,
+    "pair_recall": 0.9652173913043478,
+    "complete": 0.9374149659863945
+   },
+   "mult=1": {
+    "pairs": 353,
+    "pair_recall": 0.9688385269121813,
+    "complete": 0.9688385269121813
+   },
+   "mult=2": {
+    "pairs": 2610,
+    "pair_recall": 0.9689655172413794,
+    "complete": 0.939463601532567
+   },
+   "mult=3": {
+    "pairs": 5544,
+    "pair_recall": 0.9758297258297258,
+    "complete": 0.935064935064935
+   },
+   "mult=4+": {
+    "pairs": 17559,
+    "pair_recall": 0.9704425081154964,
+    "complete": 0.878442280945758
+   },
+   "mult=6+": {
+    "pairs": 5431,
+    "pair_recall": 0.9740379303995581,
+    "complete": 0.8612099644128114
+   },
+   "t_name_nonascii": {
+    "pairs": 3742,
+    "pair_recall": 0.9791555318011759,
+    "complete": 0.9723825226710635
+   },
+   "t_addr_nonascii": {
+    "pairs": 2353,
+    "pair_recall": 0.9774755631109222,
+    "complete": 0.9702026221692491
+   },
+   "t_addr_missing": {
+    "pairs": 1161,
+    "pair_recall": 0.8673557278208441,
+    "complete": 0.8605947955390335
+   },
+   "no_shared_name_token": {
+    "pairs": 3743,
+    "pair_recall": 0.9267966871493455,
+    "complete": 0.8957915831663327
+   },
+   "short_name": {
+    "pairs": 495,
+    "pair_recall": 0.9656565656565657,
+    "complete": 0.8905109489051095
+   },
+   "repeated_name": {
+    "pairs": 10435,
+    "pair_recall": 0.9610924772400575,
+    "complete": 0.8785079928952043
+   }
+  }
+ }
+}
